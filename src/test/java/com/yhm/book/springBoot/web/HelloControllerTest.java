@@ -15,6 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
+// secure 설정으로 인해 401 Error
 @WebMvcTest(controllers = HelloController.class, secure = false)
 public class HelloControllerTest {
 
